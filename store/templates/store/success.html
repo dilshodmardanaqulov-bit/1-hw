@@ -1,0 +1,31 @@
+{% extends 'store/base.html' %}
+
+{% block title %}Order Success - Computer Shop{% endblock %}
+
+{% block content %}
+<div style="text-align: center; padding: 3rem; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-top: 2rem;">
+    <div style="font-size: 4rem; color: #27ae60; margin-bottom: 1rem;">✓</div>
+    
+    <h1 style="color: #27ae60; margin-bottom: 1rem;">Order Successfully Placed!</h1>
+    
+    <p style="font-size: 1.1rem; color: #555; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+        Thank you for your order! We have received your request and will process it shortly. 
+        You will receive a confirmation call at your provided phone number.
+    </p>
+    
+    <div style="background-color: #ecf0f1; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+        <h3 style="margin-bottom: 1rem; color: #2c3e50;">What happens next?</h3>
+        <ul style="text-align: left; max-width: 400px; margin: 0 auto; color: #555; line-height: 1.8;">
+            <li>We'll review your order details</li>
+            <li>You'll receive a confirmation call</li>
+            <li>Your order will be prepared for delivery</li>
+            <li>You'll get updates on your order status</li>
+        </ul>
+    </div>
+    
+    <div style="display: flex; gap: 1rem; justify-content: center;">
+        <a href="{% url 'home' %}" class="btn">Continue Shopping</a>
+        <a href="{% url 'home' %}" class="btn btn-success">View More Products</a>
+    </div>
+</div>
+{% endblock %}
